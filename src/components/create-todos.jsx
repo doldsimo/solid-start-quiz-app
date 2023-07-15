@@ -9,7 +9,7 @@ export default function CreateTodos(props) {
       done: false,
     });
     // CREATE NEW TODO
-    const response = await fetch("/api/todo", {
+    const response = await fetch("/api/quizes", {
       method: "POST",
       body,
     });

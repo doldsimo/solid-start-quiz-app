@@ -2,12 +2,13 @@ import mongoose from "mongoose"
 
 // quiz model
 const quizSchema = mongoose.Schema({
-    name: String,
-    points: Boolean,
-    date: Date
-}, { timeStamps: true })
+    name: { type: String, required: true },
+    points: { type: String, required: true },
+    date: { type: String, required: true }
+})
 
-// OUR quiz model
-const Quiz = mongoose.models.Quiz ||mongoose.model("Quiz", quizSchema);
+
+// quiz model
+const Quiz = mongoose.models.Quiz || mongoose.model("Quiz", quizSchema);
 
 export default Quiz
