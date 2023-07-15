@@ -16,11 +16,11 @@
   },
   "dependencies": {
     "@solidjs/meta": "^0.28.0",
-    "@solidjs/router": "^0.5.0",
+    "@solidjs/router": "^0.8.2",
     "dotenv": "^16.0.3",
     "mongoose": "^6.7.3",
     "solid-js": "^1.6.0",
-    "solid-quiz": "^0.0.92",
+    "solid-quiz": "^0.0.93",
     "solid-start": "^0.2.0",
     "undici": "^5.11.0"
   },
