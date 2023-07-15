@@ -1,5 +1,3 @@
-import Quiz from "solid-quiz";
-
 const Home = () => {
   return (
     <div class="md:container md:mx-auto">

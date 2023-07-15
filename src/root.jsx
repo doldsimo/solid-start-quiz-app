@@ -40,7 +40,7 @@ export default function Root() {
                   </label>
                   <ul tabIndex={0} onClick={() => closeDropdownOnClick()} class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                     <li><A href="/home" >Home</A></li>
-                    <li><A href="/quiz">Quiz</A></li>
+                    <li><A href="/quiz-user">Quiz</A></li>
                     <li><A href="/todolist">ToDoList</A></li>
                     <li><A href="/about">About</A></li>
                   </ul>

@@ -4,7 +4,7 @@ import { useRouteData, createRouteData } from "solid-start";
 
 export function routeData() {
   return createRouteData(async () => {
-    const response = await fetch("/api/todo");
+    const response = await fetch("/api/quizes");
     return await response.json();
   });
 }
@@ -14,14 +14,14 @@ export default function Home() {
   const todos = useRouteData()
   // console.log(routeData)
 
-  // console.log(todos());
+  console.log(todos());
 
   return (
     <div class="md:container md:mx-auto">
-      <Show when={todos()}>
-        <DisplayTodos todos={todos()} />
+      {/* <Show when={todos()}> */}
+        {/* <DisplayTodos todos={todos()} /> */}
         <CreateTodos callback={(todos) => console.log(todos)} />
-      </Show>
+      {/* </Show> */}
     </div>
   );
 }
