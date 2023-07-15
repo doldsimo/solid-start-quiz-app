@@ -17,11 +17,11 @@ export default function Home() {
   // console.log(todos());
 
   return (
-    <main>
+    <div class="md:container md:mx-auto">
       <Show when={todos()}>
         <DisplayTodos todos={todos()} />
         <CreateTodos callback={(todos) => console.log(todos)} />
       </Show>
-    </main>
+    </div>
   );
 }

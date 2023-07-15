@@ -2,7 +2,7 @@ import Quiz from "solid-quiz";
 
 const Home = () => {
   return (
-    <div >
+    <div class="md:container md:mx-auto">
   
       Index Page
       <div>

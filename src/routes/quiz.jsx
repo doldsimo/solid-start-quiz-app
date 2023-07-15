@@ -3,9 +3,9 @@ import quiz from '../quiz/quiz.json';
 
 const QuizPage = () => {
     return (
-        <div style={{ "margin-left": "10em", "margin-right": "10em" }}>
-            <Quiz quiz={quiz} />
-        </div>
+        // <div style={{ "margin-left": "10em", "margin-right": "10em" }}>
+            <Quiz quiz={quiz} allowBackJump/>
+        // </div>
     )
 }
 
