@@ -29,16 +29,6 @@
         "point": "10"
       },
       {
-        "question": "Who invented solidjs?",
-        "questionType": "singlechoice",
-        "answers": [
-          "Ryan Carniato",
-          "Linus Torvalds"
-        ],
-        "correctAnswer": "0",
-        "point": "10"
-      },
-      {
         "question": "Arrange the different frontend frameworks in descending order of their Github Stars.",
         "questionType": "correctorder",
         "answers": [

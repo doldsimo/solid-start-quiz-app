@@ -6,7 +6,7 @@ import { createResource } from "solid-js";
 
 export function routeData() {
   const [data] = createResource(async () => {
-    const response = await fetch("/api/quizes");
+    const response = await fetch("/api/quizes/solid");
     return await response.json();
   });
   return { data };

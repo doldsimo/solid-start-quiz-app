@@ -26,11 +26,6 @@ const ResultTable = (props) => {
                             <td>{result.points}</td>
                         </tr>
                     }</For>
-                    {/* <li>
-                        <a target="_blank" href={`https://www.youtube.com/watch?v=${result.id}`}>
-                            {i() + 1}: {cat.name}
-                        </a>
-                    </li> */}
                 </tbody>
             </table>
         </div>
