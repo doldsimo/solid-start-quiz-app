@@ -1,6 +1,6 @@
-import DisplayTodos from "~/components/display-todos";
+
 import CreateTodos from "~/components/create-todos";
-import { useRouteData, createRouteData } from "solid-start";
+import { useRouteData } from "solid-start";
 import ResultTable from "~/components/ResultTable/ResultTable";
 import { createResource } from "solid-js";
 
