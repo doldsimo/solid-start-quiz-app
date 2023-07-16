@@ -15,17 +15,12 @@ export async function GET() {
 export async function POST({ request }) {
     // get json body
     const body = await getJSONBody(request.body)
-    const body2 = {
-        "name": "Testname",
-        "points": 10,
-        "type": "solid"
-    }
     console.log("body: ", body);
-    console.log("body2: ", body2);
+
 
     // create new todo in database
     // await Quiz.create({ ...body2, date: new Date().toISOString() }).catch(error => handleError(error));
-    const newQuiz = new Quiz({ ...body2, date: new Date().toISOString() });
+    const newQuiz = new Quiz({ ...body, date: new Date().toISOString() });
     await newQuiz.save();
     // return all todos as json
     // console.log(json(await Quiz.find({}).catch(error => handleError(error))));
