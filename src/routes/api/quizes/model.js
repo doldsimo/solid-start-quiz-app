@@ -4,6 +4,7 @@ import mongoose from "mongoose"
 const quizSchema = mongoose.Schema({
     name: { type: String, required: true },
     points: { type: String, required: true },
+    type: { type: String, required: true },
     date: { type: String, required: true }
 })
 

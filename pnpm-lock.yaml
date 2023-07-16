@@ -9,11 +9,14 @@ dependencies:
     specifier: ^0.28.0
     version: 0.28.2(solid-js@1.6.2)
   '@solidjs/router':
-    specifier: ^0.5.0
-    version: 0.5.1(solid-js@1.6.2)
+    specifier: ^0.8.2
+    version: 0.8.2(solid-js@1.6.2)
   dotenv:
     specifier: ^16.0.3
     version: 16.0.3
+  mongodb:
+    specifier: ^5.7.0
+    version: 5.7.0
   mongoose:
     specifier: ^6.7.3
     version: 6.7.3
@@ -21,11 +24,11 @@ dependencies:
     specifier: ^1.6.0
     version: 1.6.2
   solid-quiz:
-    specifier: ^0.0.92
-    version: 0.0.92(@babel/generator@7.20.4)(@babel/parser@7.20.3)(@babel/traverse@7.20.1)(@stitches/core@1.2.8)(less@4.1.3)(postcss-modules@4.3.1)(postcss@8.4.24)(solid-js@1.6.2)(solid-transition-group@0.0.10)(vite@3.2.4)
+    specifier: ^0.0.93
+    version: 0.0.93(@babel/generator@7.20.4)(@babel/parser@7.20.3)(@babel/traverse@7.20.1)(@stitches/core@1.2.8)(less@4.1.3)(postcss-modules@4.3.1)(postcss@8.4.24)(solid-js@1.6.2)(solid-transition-group@0.0.10)(vite@3.2.4)
   solid-start:
     specifier: ^0.2.0
-    version: 0.2.5(@solidjs/meta@0.28.2)(@solidjs/router@0.5.1)(solid-js@1.6.2)(vite@3.2.4)
+    version: 0.2.5(@solidjs/meta@0.28.2)(@solidjs/router@0.8.2)(solid-js@1.6.2)(vite@3.2.4)
   undici:
     specifier: ^5.11.0
     version: 5.13.0
@@ -2145,8 +2148,8 @@ packages:
     dependencies:
       solid-js: 1.6.2
 
-  /@solidjs/router@0.5.1(solid-js@1.6.2):
-    resolution: {integrity: sha512-igyrwUqm/9T26Lb6l7oXwpc4lLUVqbhbN92wOL3NgLoLVmkQlUNTZciuAe+Su8XeJXlrWjl6oxDJDLt+6pws/g==}
+  /@solidjs/router@0.8.2(solid-js@1.6.2):
+    resolution: {integrity: sha512-gUKW+LZqxtX6y/Aw6JKyy4gQ9E7dLqp513oB9pSYJR1HM5c56Pf7eijzyXX+b3WuXig18Cxqah4tMtF0YGu80w==}
     peerDependencies:
       solid-js: ^1.5.3
     dependencies:
@@ -2381,6 +2384,11 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       buffer: 5.7.1
+    dev: false
+
+  /bson@5.4.0:
+    resolution: {integrity: sha512-WRZ5SQI5GfUuKnPTNmAYPiKIof3ORXAF4IRU5UcgmivNIon01rWQlw5RUH954dpu8yGL8T59YShVddIPaU/gFA==}
+    engines: {node: '>=14.20.1'}
     dev: false
 
   /buffer-from@1.1.2:
@@ -3476,8 +3484,8 @@ packages:
   /minimist@1.2.7:
     resolution: {integrity: sha512-bzfL1YUZsP41gmu/qjrEk0Q6i2ix/cVeAhbCbqH9u3zYutS1cLg00qhrD0M2MVdCcx4Sc0UpP2eBWo9rotpq6g==}
 
-  /mongodb-connection-string-url@2.5.4:
-    resolution: {integrity: sha512-SeAxuWs0ez3iI3vvmLk/j2y+zHwigTDKQhtdxTgt5ZCOQQS5+HW4g45/Xw5vzzbn7oQXCNQ24Z40AkJsizEy7w==}
+  /mongodb-connection-string-url@2.6.0:
+    resolution: {integrity: sha512-WvTZlI9ab0QYtTYnuMLgobULWhokRjtC7db9LtcVfJ+Hsnyr5eo6ZtNAt3Ly24XZScGMelOcGtm7lSn0332tPQ==}
     dependencies:
       '@types/whatwg-url': 8.2.2
       whatwg-url: 11.0.0
@@ -3489,13 +3497,41 @@ packages:
     dependencies:
       bson: 4.7.0
       denque: 2.1.0
-      mongodb-connection-string-url: 2.5.4
+      mongodb-connection-string-url: 2.6.0
       socks: 2.7.1
     optionalDependencies:
       '@aws-sdk/credential-providers': 3.216.0
       saslprep: 1.0.3
     transitivePeerDependencies:
       - aws-crt
+    dev: false
+
+  /mongodb@5.7.0:
+    resolution: {integrity: sha512-zm82Bq33QbqtxDf58fLWBwTjARK3NSvKYjyz997KSy6hpat0prjeX/kxjbPVyZY60XYPDNETaHkHJI2UCzSLuw==}
+    engines: {node: '>=14.20.1'}
+    peerDependencies:
+      '@aws-sdk/credential-providers': ^3.201.0
+      '@mongodb-js/zstd': ^1.1.0
+      kerberos: ^2.0.1
+      mongodb-client-encryption: '>=2.3.0 <3'
+      snappy: ^7.2.2
+    peerDependenciesMeta:
+      '@aws-sdk/credential-providers':
+        optional: true
+      '@mongodb-js/zstd':
+        optional: true
+      kerberos:
+        optional: true
+      mongodb-client-encryption:
+        optional: true
+      snappy:
+        optional: true
+    dependencies:
+      bson: 5.4.0
+      mongodb-connection-string-url: 2.6.0
+      socks: 2.7.1
+    optionalDependencies:
+      saslprep: 1.0.3
     dev: false
 
   /mongoose@6.7.3:
@@ -4002,8 +4038,8 @@ packages:
     dependencies:
       csstype: 3.1.1
 
-  /solid-quiz@0.0.92(@babel/generator@7.20.4)(@babel/parser@7.20.3)(@babel/traverse@7.20.1)(@stitches/core@1.2.8)(less@4.1.3)(postcss-modules@4.3.1)(postcss@8.4.24)(solid-js@1.6.2)(solid-transition-group@0.0.10)(vite@3.2.4):
-    resolution: {integrity: sha512-JQcq8dGZ9F+uxZkzVBMwH9HfPrzHarBpsOBeNVybN+tZaf7VqAaiTqy8Wk6hcx22AxemuozuTSQLNaSgc8XSlA==}
+  /solid-quiz@0.0.93(@babel/generator@7.20.4)(@babel/parser@7.20.3)(@babel/traverse@7.20.1)(@stitches/core@1.2.8)(less@4.1.3)(postcss-modules@4.3.1)(postcss@8.4.24)(solid-js@1.6.2)(solid-transition-group@0.0.10)(vite@3.2.4):
+    resolution: {integrity: sha512-cvpSGj+bpVdZeg/sSEcIdB5vybl4YdjnmTvYkVTyDICp2kWSXrdBE95m3TJemebugounjc7gXbFHGfDGFhiElw==}
     dependencies:
       '@hope-ui/solid': 0.6.7(@stitches/core@1.2.8)(solid-js@1.6.2)(solid-transition-group@0.0.10)
       vite-plugin-css-modules: 0.0.1(@babel/generator@7.20.4)(@babel/parser@7.20.3)(@babel/traverse@7.20.1)(less@4.1.3)(postcss-modules@4.3.1)(postcss@8.4.24)(vite@3.2.4)
@@ -4044,7 +4080,7 @@ packages:
       polka: 1.0.0-next.22
       rollup: 2.79.1
       sirv: 2.0.2
-      solid-start: 0.2.5(@solidjs/meta@0.28.2)(@solidjs/router@0.5.1)(solid-js@1.6.2)(vite@3.2.4)
+      solid-start: 0.2.5(@solidjs/meta@0.28.2)(@solidjs/router@0.8.2)(solid-js@1.6.2)(vite@3.2.4)
       terser: 5.16.0
       undici: 5.13.0
       vite: 3.2.4(less@4.1.3)
@@ -4052,7 +4088,7 @@ packages:
       - supports-color
     dev: true
 
-  /solid-start@0.2.5(@solidjs/meta@0.28.2)(@solidjs/router@0.5.1)(solid-js@1.6.2)(vite@3.2.4):
+  /solid-start@0.2.5(@solidjs/meta@0.28.2)(@solidjs/router@0.8.2)(solid-js@1.6.2)(vite@3.2.4):
     resolution: {integrity: sha512-G1Iyb2ECulsCsewr12hueaCGvB+FQPylcYq9SvsCy8A2Lpyj5KcB9ic7pAKtEbByBAa318MqvBFEmL4eKS8mhw==}
     hasBin: true
     peerDependencies:
@@ -4068,7 +4104,7 @@ packages:
       '@babel/preset-typescript': 7.18.6(@babel/core@7.20.2)
       '@babel/template': 7.18.10
       '@solidjs/meta': 0.28.2(solid-js@1.6.2)
-      '@solidjs/router': 0.5.1(solid-js@1.6.2)
+      '@solidjs/router': 0.8.2(solid-js@1.6.2)
       '@types/cookie': 0.5.1
       '@vinxi/vite-plugin-inspect': 0.6.27(rollup@2.79.1)(vite@3.2.4)
       chokidar: 3.5.3
