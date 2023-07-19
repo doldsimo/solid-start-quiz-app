@@ -4,6 +4,13 @@ import "~/connection"
 import { json } from "solid-start"
 import { getJSONBody, handleError } from "~/utils"
 
+export async function GET() {
+    console.log("inside get quizes");
+    // return all todos as json
+    //console.log(json(await Quiz.find({}).catch(error => handleError(error))));
+    return json(await Quiz.find({}).catch(error => handleError(error)))
+}
+
 export async function POST({ request }) {
     // get json body
     const body = await getJSONBody(request.body)
