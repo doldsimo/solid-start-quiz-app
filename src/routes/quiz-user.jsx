@@ -21,14 +21,14 @@ const QuizPage = () => {
     }
 
     return (
-        <div style={{ display: "flex", "flex-direction":"column"}}>
+        <div style={{ display: "flex", "flex-direction": "column" }}>
             <div class="md:container md:mx-auto">
                 <p >Select one of the following quiz topics:</p>
             </div>
             <div>
-                <div style={{display: "flex", "margin-bottom": "1em"}} class="tabs justify-center">
+                <div style={{ display: "flex", "margin-bottom": "1em"}} class="justify-center tabs">
                     <For each={tabs}>{(tab, index) =>
-                        <button class="tab tab-lifted" class:tab-active={activeTab == index} onClick={()=> setActiveTab(index)}>{tab}</button>}
+                        <button class={index() === activeTab() ? "tab tab-lifted tab-active " : "tab tab-lifted"} onClick={() => setActiveTab(index)}>{tab}</button>}
                     </For>
                 </div>
                 <div>
@@ -43,7 +43,7 @@ const QuizPage = () => {
                 </div>
             </div>
             {/* <Quiz quiz={quizSolid} allowBackJump onComplete={(e) => postResult(e)} /> */}
-       
+
         </div>
 
     )
