@@ -1,5 +1,6 @@
 import Quiz from "solid-quiz";
 import quizSolid from '../quiz/quiz-solid.json';
+import quizProgramming from '../quiz/quiz-programming.json';
 import { Show, createSignal } from "solid-js";
 
 const QuizPage = () => {
@@ -22,7 +23,7 @@ const QuizPage = () => {
     return (
         <div style={{ display: "flex", "flex-direction":"column"}}>
             <div class="md:container md:mx-auto">
-                <p >Select one of the following quiz tobics:</p>
+                <p >Select one of the following quiz topics:</p>
             </div>
             <div>
                 <div style={{display: "flex", "margin-bottom": "1em"}} class="tabs justify-center">
@@ -36,7 +37,7 @@ const QuizPage = () => {
                             <Quiz quiz={quizSolid} allowBackJump onComplete={(e) => postResult(e, "solid")} />
                         </Match>
                         <Match when={activeTab() === 1} >
-                            Programming
+                            <Quiz quiz={quizProgramming} allowBackJump onComplete={(e) => postResult(e, "programming")} />
                         </Match>
                     </Switch>
                 </div>

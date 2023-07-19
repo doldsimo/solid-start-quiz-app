@@ -1,0 +1,89 @@
+{
+  "questions": [
+
+    {
+      "question": "What does HTML stand for?",
+      "questionType": "singlechoice",
+      "answers": [
+        "Hyper Trainer Marking Language",
+        "Hyper Text Marketing Language",
+        "Hyper Text Markup Language",
+        "Hyper Text Markup Leveler"
+      ],
+      "correctAnswer": "1",
+      "point": "10"
+    },
+    {
+      "question": "The benefits of the Object Orientation are?",
+      "questionType": "multiplechoice",
+      "answers": [
+        "Modularity",
+        "Code Reusability",
+        "Flexibility and Scalability",
+        "Inheritance"
+      ],
+      "correctAnswer": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "point": "10"
+    },
+    {
+      "question": "In Java, a method is a container that holds classes.",
+      "questionType": "singlechoice",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": "1",
+      "point": "10"
+    },
+    {
+      "question": "How many bits are there in a byte?",
+      "questionType": "numberinput",
+      "correctAnswer": "8",
+      "point": "10"
+    },
+    {
+      "question": "<h1>Text</h1> is the correct way of making a header in HTML.",
+      "questionType": "singlechoice",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": "0",
+      "point": "10"
+    },
+    {
+      "question": "What is the correct order of phases in the classic software development life cycle?",
+      "questionType": "correctorder",
+      "answers": [
+        "Implementation",
+        "Design",
+        "Testing",
+        "Maintenance"
+      ],
+      "correctAnswer": [
+        "Design",
+        "Implementation",
+        "Testing",
+        "Maintenance"
+      ],
+      "point": "10"
+    },
+    {
+      "question": "What is the result of the logical AND operator (&&) when both operands are true?",
+      "questionType": "singlechoice",
+      "answers": [
+        "False",
+        "Null",
+        "Undefined",
+        "True"
+      ],
+      "correctAnswer": "3",
+      "point": "10"
+    }
+  ]
+}
