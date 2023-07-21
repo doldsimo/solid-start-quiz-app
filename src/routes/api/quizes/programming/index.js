@@ -4,10 +4,8 @@ import "~/connection"
 import { json } from "solid-start"
 import { getJSONBody, handleError } from "~/utils"
 
-// function for handling get requests to /api/quizes
+// function for handling get requests to /api/quizes/programming
 export async function GET() {
     console.log("inside get quizes");
-    // return all todos as json
-    //console.log(json(await Quiz.find({}).catch(error => handleError(error))));
     return json(await Quiz.find({"type": "programming"}).catch(error => handleError(error)))
 }
