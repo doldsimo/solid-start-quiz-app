@@ -34,10 +34,10 @@ const QuizPage = () => {
                 <div>
                     <Switch>
                         <Match when={activeTab() === 0} >
-                            <Quiz quiz={quizSolid} allowBackJump onComplete={(e) => postResult(e, "solid")} />
+                            <Quiz quizStartButton="Solidjs Quiz" quiz={quizSolid} allowBackJump onComplete={(e) => postResult(e, "solid")} />
                         </Match>
                         <Match when={activeTab() === 1} >
-                            <Quiz quiz={quizProgramming} allowBackJump onComplete={(e) => postResult(e, "programming")} />
+                            <Quiz quizStartButton="Programming Quiz" quiz={quizProgramming} allowBackJump onComplete={(e) => postResult(e, "programming")} />
                         </Match>
                     </Switch>
                 </div>

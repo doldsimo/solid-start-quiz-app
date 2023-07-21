@@ -24,8 +24,8 @@ dependencies:
     specifier: ^1.6.0
     version: 1.6.2
   solid-quiz:
-    specifier: ^0.0.93
-    version: 0.0.93(@babel/generator@7.20.4)(@babel/parser@7.20.3)(@babel/traverse@7.20.1)(@stitches/core@1.2.8)(less@4.1.3)(postcss-modules@4.3.1)(postcss@8.4.24)(solid-js@1.6.2)(solid-transition-group@0.0.10)(vite@3.2.4)
+    specifier: ^0.0.94
+    version: 0.0.94(@babel/generator@7.20.4)(@babel/parser@7.20.3)(@babel/traverse@7.20.1)(@stitches/core@1.2.8)(less@4.1.3)(postcss-modules@4.3.1)(postcss@8.4.24)(solid-js@1.6.2)(solid-transition-group@0.0.10)(vite@3.2.4)
   solid-start:
     specifier: ^0.2.0
     version: 0.2.5(@solidjs/meta@0.28.2)(@solidjs/router@0.8.2)(solid-js@1.6.2)(vite@3.2.4)
@@ -4038,8 +4038,8 @@ packages:
     dependencies:
       csstype: 3.1.1
 
-  /solid-quiz@0.0.93(@babel/generator@7.20.4)(@babel/parser@7.20.3)(@babel/traverse@7.20.1)(@stitches/core@1.2.8)(less@4.1.3)(postcss-modules@4.3.1)(postcss@8.4.24)(solid-js@1.6.2)(solid-transition-group@0.0.10)(vite@3.2.4):
-    resolution: {integrity: sha512-cvpSGj+bpVdZeg/sSEcIdB5vybl4YdjnmTvYkVTyDICp2kWSXrdBE95m3TJemebugounjc7gXbFHGfDGFhiElw==}
+  /solid-quiz@0.0.94(@babel/generator@7.20.4)(@babel/parser@7.20.3)(@babel/traverse@7.20.1)(@stitches/core@1.2.8)(less@4.1.3)(postcss-modules@4.3.1)(postcss@8.4.24)(solid-js@1.6.2)(solid-transition-group@0.0.10)(vite@3.2.4):
+    resolution: {integrity: sha512-wIGMd63LqmSjyIKRcajI7Ow61yI3octIyk/r6YAzEs5rtxXQ5JLZzsWPIW1wKR/rEuGOX+lpdFztGeooKpF96w==}
     dependencies:
       '@hope-ui/solid': 0.6.7(@stitches/core@1.2.8)(solid-js@1.6.2)(solid-transition-group@0.0.10)
       vite-plugin-css-modules: 0.0.1(@babel/generator@7.20.4)(@babel/parser@7.20.3)(@babel/traverse@7.20.1)(less@4.1.3)(postcss-modules@4.3.1)(postcss@8.4.24)(vite@3.2.4)
