@@ -1,5 +1,9 @@
 > For packages use `pnpm install`
 
+> run the app with `pnpm dev`
+
+> got o `http://127.0.0.1:3000/home`
+
 # SolidStart
 
 Everything you need to build a Solid project, powered by [`solid-start`](https://start.solidjs.com);

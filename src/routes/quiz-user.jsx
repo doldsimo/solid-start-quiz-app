@@ -23,7 +23,7 @@ const QuizPage = () => {
     return (
         <div style={{ display: "flex", "flex-direction": "column" }}>
             <div class="md:container md:mx-auto">
-                <p >Select one of the following quiz topics:</p>
+                <p class="text-xl">Select one of the following quiz topics:</p>
             </div>
             <div>
                 <div style={{ display: "flex", "margin-bottom": "1em"}} class="justify-center tabs">
