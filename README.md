@@ -1,36 +1,17 @@
-> For packages use `pnpm install`
+# Solid Start app example with solid-quiz library
 
-> run the app with `pnpm dev`
+> Fullstack example application that shows how [solid-quiz](https://github.com/doldsimo/solid-quiz) can be used in [solid start](https://start.solidjs.com/getting-started/what-is-solidstart).
 
-> got o `http://127.0.0.1:3000/home`
+> Requirements: Nodejs (npm), pnpm, mongodb (local or cloud)
 
-# SolidStart
+## Installation
 
-Everything you need to build a Solid project, powered by [`solid-start`](https://start.solidjs.com);
+1. Clone the repository
+2. Install all packages with `pnpm install`
+3. Set up the .env file (copy .env.example and remane the file) type you local mongodb url for you local db inside the file
+4. Start the development server with `pnpm dev`
+5. Test the example on `http://127.0.0.1:3000/home`
 
-## Creating a project
+## Need Help?
 
-```bash
-# create a new project in the current directory
-npm init solid
-
-# create a new project in my-app
-npm init solid my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-Solid apps are built with _adapters_, which optimise your project for deployment to different environments.
-
-By default, `npm run build` will generate a Node app that you can run with `npm start`. To use a different adapter, add it to the `devDependencies` in `package.json` and specify in your `vite.config.js`.
+If you have a problem with the library, [create a new issue](https://github.com/doldsimo/solid-start-quiz-app/issues/new).
