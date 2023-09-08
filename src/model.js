@@ -3,9 +3,9 @@ import mongoose from "mongoose"
 // quiz model
 const quizSchema = mongoose.Schema({
     name: { type: String, required: true },
-    points: { type: String, required: true },
+    points: { type: Number, required: true },
     type: { type: String, required: true },
-    date: { type: String, required: true }
+    date: { type: Date, required: true }
 })
 
 
