@@ -51,7 +51,7 @@ export default function Home() {
       </div>
 
       <ResultTable data={isRouteData() ? data : tableData} />
-      <CreateTodos callback={(todos) => console.log(todos)} />
+      {/* <CreateTodos callback={(todos) => console.log(todos)} /> */}
     </div >
   );
 }
